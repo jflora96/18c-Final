@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 package nba;
+import java.util.ArrayList;
+import java.util.Comparator;
 
-public class Players implements Comparable<Players>{
+public class Players implements Comparable<Players> {
 
     public Players(Teams team, int jerseyNumber, String position, String name)
     {
@@ -74,10 +76,11 @@ public class Players implements Comparable<Players>{
     private String position;
     private String name;
 
-    @Override
-    public int compareTo(Players o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   @Override
+   public int compareTo(Players o)
+   {
+       return this.name.compareTo(o.name);
+   }
 
     
 }
