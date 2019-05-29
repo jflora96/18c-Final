@@ -25,12 +25,29 @@ public class NBA {
         Teams Clippers = new Teams("Clippers", 7, "9-1");
         Teams Raptors = new Teams("Raptors", 8 , "10-0");
         Players KyrieIrving = new Players(Celtics, 12, "Point Guard", "Kyrie Irving");
+        Players AronBanes = new Players(Celtics, 46, "Forward", "Aron Banes");
+        Players JaylenBrown = new Players(Celtics, 7, "Guard", "Jaylen Brown");
+        Players PJDozier = new Players(Celtics, 50, "Forward", "PJ Dozier");
+        Players GordonHayward = new Players(Celtics, 20, "Forward", "Gordon Hayward");
+        Players AlHorford = new Players(Celtics, 42, "Center", "Al Horford");
+        Players RJHunter = new Players (Celtics, 28, "Guard", "RJ Hunter");
+        Players MarcusMorris = new Players(Celtics, 13, "Forward", "MarcusMorris");
+        Players LonzoBall = new Players(Lakers, 2, "Point Guard", "Lonzo Ball");
+        Players ReggieBullock = new Players(Lakers, 35, "Shooting Guard", "Reggie Bullock");
+        Players AlexCaruso = new Players(Lakers, 4, "Shooting Guard", "Alex Caruso");
         Players LamarcusAldridge = new Players(Spurs, 15, "Power Forward", "Lamarcus Alrdidge");
         Players ZazaPechulia = new Players(Warriors, 16, "Center", "Zaza Pechulia");
         ArrayList<Players> playerArray = new ArrayList(20);
         playerArray.add(KyrieIrving);
         playerArray.add(ZazaPechulia);
         playerArray.add(LamarcusAldridge);
+        playerArray.add(AronBanes);
+        playerArray.add(JaylenBrown);
+        playerArray.add(PJDozier);
+        playerArray.add(GordonHayward);
+        playerArray.add(AlHorford);
+        playerArray.add(RJHunter);
+        playerArray.add(MarcusMorris);
         
         ArrayList<Coaches> coachArray = new ArrayList(8);
         coachArray.add(coach1);
@@ -46,7 +63,7 @@ public class NBA {
         map.put(Clippers.getName(), Clippers);
         map.put(Raptors.getName(), Raptors);
         
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 10; i++)
         {
            
             if (playerArray.get(i).getTeam() == Celtics)
@@ -162,4 +179,6 @@ public class NBA {
     }
   }
     
+}
+
 }
